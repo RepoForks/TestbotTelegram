@@ -20,7 +20,13 @@ $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 $text = strtolower($text);
 
-header("Content-Type: application/json");
-$parameters = array('chat_id' => $chatId, "text" => "___".$text);
-$parameters["method"] = "sendMessage";
-echo json_encode($parameters);
+
+
+if($text="Who are you?"){
+
+
+  header("Content-Type: application/json");
+  $parameters = array('chat_id' => $chatId, "text" => "I am your father, Luke.");
+  $parameters["method"] = "sendMessage";
+  echo json_encode($parameters);
+}
