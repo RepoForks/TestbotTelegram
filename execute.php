@@ -27,7 +27,8 @@ if(substr($text, 0,1)=="/"){
     case '/whoareyou':
       $response="Hi " . $username . ", I am Denny!👋\n
 I'm an Italian programmer and my dream is to work for Google\n";
-      $response.="\n\nIf you want to contact me, you can find my email here: /email";
+      $response.="\n\nIf you want to contact me, you can find my email here: /email📮";
+      $response.="\nIf you want watch my apps, tap here: /project📱"
       break;
 
     case '/email':
