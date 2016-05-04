@@ -20,10 +20,16 @@ $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 $text = strtolower($text);
 
-
+if(substr($text, 0,1)=="/"){
 if($text=="/whoareyou"){
   header("Content-Type: application/json");
-  $parameters = array('chat_id' => $chatId, "text" => "I am your father, Luke.".substr($text, 0,1));
+  $parameters = array('chat_id' => $chatId, "text" => "I am your father, Luke.");
+  $parameters["method"] = "sendMessage";
+  echo json_encode($parameters);
+}
+}else{
+  header("Content-Type: application/json");
+  $parameters = array('chat_id' => $chatId, "text" => "Non riconosco il comando");
   $parameters["method"] = "sendMessage";
   echo json_encode($parameters);
 }
