@@ -28,6 +28,10 @@ if(substr($text, 0,1)=="/"){
       $response="Hi " . $username . ", I am Denny!";
       break;
 
+    case '/email':
+        $response="Here you are my emails:\nacciarogennaro@gmail.com\nwork@gdacciaro.com";
+        break;
+
     default:
       $response="I can not recognize the command, please use the commands list";
       break;
