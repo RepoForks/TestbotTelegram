@@ -23,7 +23,7 @@ $text = strtolower($text);
 
 if($text=="/whoareyou"){
   header("Content-Type: application/json");
-  $parameters = array('chat_id' => $chatId, "text" => "I am your father, Luke.".substr('abcdef', 0,1));
+  $parameters = array('chat_id' => $chatId, "text" => "I am your father, Luke.".substr('$text', 0,1));
   $parameters["method"] = "sendMessage";
   echo json_encode($parameters);
 }
