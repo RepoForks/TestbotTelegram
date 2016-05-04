@@ -1,5 +1,5 @@
 <?php
-
+echo "ciao";
 // PARAMETRI DA MODIFICARE
 $WEBHOOK_URL = 'https://testamiquesto.herokuapp.com/execute.php';
 $BOT_TOKEN = '{TOKEN}';
