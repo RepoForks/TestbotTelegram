@@ -1,7 +1,7 @@
 <?php
 
 // PARAMETRI DA MODIFICARE
-$WEBHOOK_URL = 'https://{APP NAME}.herokuapp.com/execute.php';
+$WEBHOOK_URL = 'https://testamiquesto.herokuapp.com/execute.php';
 $BOT_TOKEN = '{TOKEN}';
 
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
