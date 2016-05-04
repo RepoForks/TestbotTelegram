@@ -22,7 +22,7 @@ $text = strtolower($text);
 
 
 
-if($text=="Who are you?"){
+if($text=="who are you?"){
   header("Content-Type: application/json");
   $parameters = array('chat_id' => $chatId, "text" => "I am your father, Luke.");
   $parameters["method"] = "sendMessage";
