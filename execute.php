@@ -20,13 +20,23 @@ $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 $text = strtolower($text);
 
+$response=""; // I know that in PHP i cannot initialize variables but I did it 'couse I am rebel.
 if(substr($text, 0,1)=="/"){
-if($text=="/whoareyou"){
+  switch ($text) {
+
+    case '/whoareyou':
+      $response="Hi " . $username . ", I am Denny!";
+      break;
+
+    default:
+  $response="Non riconosco il comando";
+      break;
+  }
   header("Content-Type: application/json");
-  $parameters = array('chat_id' => $chatId, "text" => "I am your father, Luke.");
+  $parameters = array('chat_id' => $chatId, "text" => $response);
   $parameters["method"] = "sendMessage";
   echo json_encode($parameters);
-}
+
 }else{
   header("Content-Type: application/json");
   $parameters = array('chat_id' => $chatId, "text" => "Non riconosco il comando");
