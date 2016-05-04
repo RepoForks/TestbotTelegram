@@ -29,7 +29,7 @@ if(substr($text, 0,1)=="/"){
       break;
 
     default:
-  $response="Non riconosco il comando";
+      $response="I can not recognize the command, please use the commands list";
       break;
   }
   header("Content-Type: application/json");
@@ -39,7 +39,7 @@ if(substr($text, 0,1)=="/"){
 
 }else{
   header("Content-Type: application/json");
-  $parameters = array('chat_id' => $chatId, "text" => "Non riconosco il comando");
+  $parameters = array('chat_id' => $chatId, "text" => "I can not recognize the command, please use the commands list");
   $parameters["method"] = "sendMessage";
   echo json_encode($parameters);
 }
