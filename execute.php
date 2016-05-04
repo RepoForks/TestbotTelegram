@@ -20,7 +20,6 @@ $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 $text = strtolower($text);
 
-echo substr('abcdef', 1,1); 
 
 if($text=="/whoareyou"){
   header("Content-Type: application/json");
