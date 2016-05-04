@@ -29,7 +29,7 @@ if(substr($text, 0,1)=="/"){
       break;
 
     case '/email':
-        $response="Here you are my emails:\nacciarogennaro@gmail.com\nwork@gdacciaro.com";
+        $response="✉️Here you are my emails:✉️\nacciarogennaro@gmail.com\nwork@gdacciaro.com";
         break;
 
     default:
