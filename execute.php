@@ -27,7 +27,7 @@ if(substr($text, 0,1)=="/"){
     case '/aboutme':
       $response="Hi " . $username . ", I am Denny!👋\nI'm an Italian programmer and my dream is to work for Google\n";
       $response.="\nIf you want to contact me, you can find my email here: /email📮";
-      $response.="\nIf you want watch my apps, tap here: /project📱";
+      $response.="\nIf you want watch my apps, tap here: /projects📱";
       break;
 
     case '/email':
@@ -38,7 +38,7 @@ if(substr($text, 0,1)=="/"){
         $response="💀CREEPYPASTA💀";
         $response.="\nA Creepypasta is a short story that was designed to terrorize the reader
 \nThis application is a database of scary stories in 3 languages (English,Italian and Español).
-\nIt includes over 3500 stories, which will not let you sleep at night.";
+\nIt includes over 3500 stories, which will not let you sleep at night...";
   $response."\n ciao -> https://play.google.com/store/apps/details?id=com.acciarogennaro.creepypasta";
             break;
 
