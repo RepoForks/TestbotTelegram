@@ -38,7 +38,7 @@ if(substr($text, 0,1)=="/"){
         $response="💀CREEPYPASTA💀";
         $response.="\nA Creepypasta is a short story that was designed to terrorize the reader
 \nThis application is a database of scary stories in 3 languages (English,Italian and Español).
-\nIt includes over 3500 stories, which will not let you sleep at night...";
+\nIt includes over 3500 stories, which will not let you sleep at night https://play.google.com/store/apps/details?id=com.acciarogennaro.creepypasta";
   $response."\n ciao -> https://play.google.com/store/apps/details?id=com.acciarogennaro.creepypasta";
             break;
 
