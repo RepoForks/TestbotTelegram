@@ -43,10 +43,8 @@ if(substr($text, 0,1)=="/"){
         $kristall="🚘AUTOSCUOLA KRISTALL🚘";
         $kristall.="\nWith this app you can view a complete video course to get a driving license.
 \nThis includes quizzes and all the tools dedicated for each young driver\n\n\nDownload here:\nhttps://play.google.com/store/apps/details?id=autoscuolakristall.android";
-        header("Content-Type: application/json");
         $parameters = array('chat_id' => $chatId, "text" => $kristall);
         $parameters["method"] = "sendMessage";
-        echo json_encode($parameters);
     break;
 
     default:
