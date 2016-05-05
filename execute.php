@@ -38,9 +38,16 @@ if(substr($text, 0,1)=="/"){
         $response="💀CREEPYPASTA💀";
         $response.="\nA Creepypasta is a short story that was designed to terrorize the reader
 \nThis application is a database of scary stories in 3 languages (English,Italian and Español).
-\nIt includes over 3500 stories, which will not let you sleep at night https://play.google.com/store/apps/details?id=com.acciarogennaro.creepypasta";
-  $response."\n ciao -> https://play.google.com/store/apps/details?id=com.acciarogennaro.creepypasta";
-            break;
+\nIt includes over 3500 stories, which will not let you sleep at night\n\n\nDownload here:\nhttps://play.google.com/store/apps/details?id=com.acciarogennaro.creepypasta";
+
+        $kristall="🚘AUTOSCUOLA KRISTALL🚘";
+        $kristall.="\nWith this app you can view a complete video course to get a driving license.
+\nThis includes quizzes and all the tools dedicated for each young driver\n\n\nDownload here:\nhttps://play.google.com/store/apps/details?id=autoscuolakristall.android";
+        header("Content-Type: application/json");
+        $parameters = array('chat_id' => $chatId, "text" => $kristall);
+        $parameters["method"] = "sendMessage";
+        echo json_encode($parameters);
+    break;
 
     default:
       $response="I can not recognize the command, please use the commands list";
