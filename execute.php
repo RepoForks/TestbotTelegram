@@ -24,9 +24,8 @@ $response=""; // I know that in PHP i cannot initialize variables but I did it '
 if(substr($text, 0,1)=="/"){
   switch ($text) {
 
-    case '/whoareyou':
-      $response="Hi " . $username . ", I am Denny!👋\n
-I'm an Italian programmer and my dream is to work for Google\n";
+    case '/aboutme':
+      $response="Hi " . $username . ", I am Denny!👋\nI'm an Italian programmer and my dream is to work for Google\n";
       $response.="\nIf you want to contact me, you can find my email here: /email📮";
       $response.="\nIf you want watch my apps, tap here: /project📱";
       break;
@@ -34,6 +33,14 @@ I'm an Italian programmer and my dream is to work for Google\n";
     case '/email':
         $response="📮Here you are my emails:📮\n✉️acciarogennaro@gmail.com\n✉️work@gdacciaro.com";
         break;
+
+    case '/projects':
+        $response="💀CREEPYPASTA💀";
+        $response.="\nA Creepypasta is a short story that was designed to terrorize the reader
+\nThis application is a database of scary stories in 3 languages (English,Italian and Español).
+\nIt includes over 3500 stories, which will not let you sleep at night.";
+  $response."\n https://play.google.com/store/apps/details?id=com.acciarogennaro.creepypasta";
+            break;
 
     default:
       $response="I can not recognize the command, please use the commands list";
