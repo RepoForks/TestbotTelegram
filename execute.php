@@ -40,7 +40,7 @@ if(substr($text, 0,1)=="/"){
 \nThis application is a database of scary stories in 3 languages (English,Italian and Español).
 \nIt includes over 3500 stories, which will not let you sleep at night\n\n\nDownload here:\nhttps://play.google.com/store/apps/details?id=com.acciarogennaro.creepypasta";
 
-        $response="🚘AUTOSCUOLA KRISTALL🚘";
+        $response.="🚘AUTOSCUOLA KRISTALL🚘";
         $response.="\nWith this app you can view a complete video course to get a driving license.
 \nThis includes quizzes and all the tools dedicated for each young driver\n\n\nDownload here:\nhttps://play.google.com/store/apps/details?id=autoscuolakristall.android";
 
