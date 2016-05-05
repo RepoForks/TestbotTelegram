@@ -43,8 +43,7 @@ if(substr($text, 0,1)=="/"){
         $kristall="🚘AUTOSCUOLA KRISTALL🚘";
         $kristall.="\nWith this app you can view a complete video course to get a driving license.
 \nThis includes quizzes and all the tools dedicated for each young driver\n\n\nDownload here:\nhttps://play.google.com/store/apps/details?id=autoscuolakristall.android";
-        $parameters = array('chat_id' => $chatId, "text" => $kristall);
-        $parameters["method"] = "sendMessage";
+
     break;
 
     default:
@@ -52,7 +51,9 @@ if(substr($text, 0,1)=="/"){
       break;
   }
   header("Content-Type: application/json");
-  $parameters = array('chat_id' => $chatId, "text" => $response);
+//  $parameters = array('chat_id' => $chatId, "text" => $response);
+//  $parameters["method"] = "sendMessage";
+  $parameters = array('chat_id' => $chatId, "sticker" => $arrayName = array('file_id' =>"BQADBAADgAIAAmbFbQYjv4eHMUpKPQI"));
   $parameters["method"] = "sendMessage";
   echo json_encode($parameters);
 
